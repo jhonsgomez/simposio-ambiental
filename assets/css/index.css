@@ -199,8 +199,12 @@ body {
 
 /* About Section */
 .about {
-    padding: 100px 0;
+    padding: 50px 0 100px 0;
     background-color: var(--white);
+}
+
+.about-us {
+    padding: 100px 0 50px 0;
 }
 
 .section-title {
@@ -787,13 +791,31 @@ fieldset:disabled .btn {
 }
 
 /* Responsive Styles */
+@media (max-width: 1200px) {
+    .hero-container {
+        margin-top: 9rem;
+    }
+
+    .hero {
+        padding-bottom: 5rem;
+    }
+}
+
 @media (max-width: 991px) {
+    .hero {
+        padding-bottom: 0;
+    }
+
+    .about {
+        padding: 20px 0 100px 0;
+    }
+
     .contact-form {
         margin-top: 50px;
     }
 
     .hero-container {
-        margin-top: 9rem;
+        margin-top: 10rem;
     }
 
     .hero-title {
@@ -832,6 +854,10 @@ fieldset:disabled .btn {
 
     .hero-title {
         font-size: 2.3rem;
+    }
+
+    .hero-container {
+        margin-top: 8rem;
     }
 
     .hero-subtitle {
@@ -989,3 +1015,77 @@ fieldset:disabled .btn {
         transform: scale(1);
     }
 }
+
+/* Slide */
+.slider-container {
+    margin: 2rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Asegurarse de que el slider sea responsive */
+@media (max-width: 768px) {
+    .slider-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .slider-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .content-about-us {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slider-container {
+        width: 60%;
+    }
+
+    .text-about-us {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .slider-about-us {
+        width: 100%;
+    }
+}
+
+
+/* @media (max-width: 1200px) {
+    .navbar-expand-custom .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-expand-custom .navbar-collapse {
+        display: none;
+    }
+
+    .navbar-expand-custom .navbar-collapse.show {
+        display: block;
+    }
+} */
