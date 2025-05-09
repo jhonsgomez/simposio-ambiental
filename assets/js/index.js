@@ -193,7 +193,7 @@ window.addEventListener('scroll', function () {
     }
 
     // Animate elements when they come into view
-    const animateElements = document.querySelectorAll('.feature-card, .speaker-card, .schedule-item, .sponsor-logo');
+    const animateElements = document.querySelectorAll('.feature-card, .speaker-card, .schedule-item');
     animateElements.forEach(element => {
         const elementPosition = element.getBoundingClientRect().top;
 
