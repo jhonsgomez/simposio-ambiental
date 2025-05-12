@@ -246,7 +246,7 @@ body {
 
 /* About Section */
 .about {
-    padding: 50px 0 100px 0;
+    padding: 100px 0 100px 0;
     background-color: var(--white);
 }
 
@@ -741,7 +741,7 @@ fieldset:disabled .btn {
 
 /* Sponsors Section */
 .sponsors {
-    padding: 100px 0;
+    padding: 100px 0 50px 0;
     background-color: var(--light-gray);
 }
 
@@ -1161,7 +1161,6 @@ fieldset:disabled .btn {
     }
 }
 
-/* Slide */
 .slider-container {
     margin: 2rem;
     overflow: hidden;
@@ -1187,7 +1186,6 @@ fieldset:disabled .btn {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Asegurarse de que el slider sea responsive */
 @media (max-width: 768px) {
     .slider-container {
         width: 80%;
@@ -1220,7 +1218,6 @@ fieldset:disabled .btn {
     }
 }
 
-/* Personalizar el breakpoint del colapso NAVBAR a 1200px */
 @media (max-width: 1200px) {
     .navbar-expand-lg .navbar-collapse {
         display: none !important;
@@ -1244,7 +1241,6 @@ fieldset:disabled .btn {
     }
 }
 
-/* Asegurar que la barra permanezca fija y las animaciones se mantengan */
 .navbar-expand-lg .navbar-collapse.show,
 .navbar-expand-lg .navbar-collapse.collapsing {
     display: block !important;

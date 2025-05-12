@@ -22,10 +22,9 @@
     image-rendering: auto;
 }
 
-/* Optimizaciones específicas para cada imagen basadas en su resolución */
+
 #collage-1 img {
     object-position: center;
-    /* Imagen de alta resolución, se puede recortar desde el centro */
 }
 
 .collage-item:hover {

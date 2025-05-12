@@ -15,6 +15,9 @@
     <!-- AOS (Animate On Scroll) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- Link favicon -->
     <link rel="icon" href="assets/img/logo-policia.svg" type="image/x-icon">
 
@@ -28,6 +31,7 @@
     <!-- Link CSS -->
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/collage.css">
+    <link rel="stylesheet" href="assets/css/swiper-slider.css">
 </head>
 
 <body>
@@ -191,7 +195,7 @@
     <section id="about" class="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="section-title">Acerca del Simposio</h2>
                     <p class="about-text">Este Simposio Internacional de Seguridad Ambiental reúne a expertos,
                         investigadores y líderes gubernamentales para abordar los desafíos más urgentes en materia de
@@ -225,6 +229,70 @@
                         <div class="collage-item" id="collage-5">
                             <img src="assets/img/collage-5.jpg" alt="Simposio de Seguridad Ambiental - Imagen 5">
                             <div class="collage-caption">Conservación de recursos</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slider Section -->
+    <section id="photo-slider" class="photo-slider">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2 class="section-title mx-auto" data-aos="fade-up" data-aos-duration="1000">Galería de Fotos</h2>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="container-swiper">
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                            class="swiper mySwiper2" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/img/galeria-1.jpg" alt="Imagen 1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/galeria-2.jpg" alt="Imagen 2">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/galeria-3.jpg" alt="Imagen 3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/galeria-4.jpg" alt="Imagen 4">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/galeria-5.jpg" alt="Imagen 5">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/galeria-6.jpg" alt="Imagen 6">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div thumbsSlider="" class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/img/galeria-1.jpg" alt="Imagen 1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/galeria-2.jpg" alt="Imagen 2">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/galeria-3.jpg" alt="Imagen 3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/galeria-4.jpg" alt="Imagen 4">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/galeria-5.jpg" alt="Imagen 5">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/galeria-6.jpg" alt="Imagen 6">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1044,53 +1112,29 @@
                     <div class="countries-slider">
                         <div class="slider-track" id="sliderTrack">
                             <div class="country-item">
-                                <img src="https://www.countryflags.com/wp-content/uploads/colombia-flag-png-large.png"
-                                    alt="Colombia" class="img-fluid">
+                                <img src="assets/img/bandera-colombia.png" alt="Colombia" class="img-fluid">
                             </div>
                             <div class="country-item">
-                                <img src="https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png"
-                                    alt="Estados Unidos" class="img-fluid">
+                                <img src="assets/img/bandera-ecuador.png" alt="Ecuador" class="img-fluid">
                             </div>
                             <div class="country-item">
-                                <img src="https://www.countryflags.com/wp-content/uploads/germany-flag-png-large.png"
-                                    alt="Alemania" class="img-fluid">
+                                <img src="assets/img/bandera-peru.png" alt="Perú" class="img-fluid">
                             </div>
                             <div class="country-item">
-                                <img src="https://cdn.countryflags.com/thumbs/brazil/flag-800.png" alt="Brasil"
-                                    class="img-fluid">
-                            </div>
-                            <div class="country-item">
-                                <img src="https://cdn.countryflags.com/thumbs/mexico/flag-800.png" alt="México"
-                                    class="img-fluid">
-                            </div>
-                            <div class="country-item">
-                                <img src="https://cdn.countryflags.com/thumbs/spain/flag-800.png" alt="España"
-                                    class="img-fluid">
+                                <img src="assets/img/bandera-costarica.png" alt="Costa Rica" class="img-fluid">
                             </div>
                             <!-- Duplicated flags for infinite effect -->
                             <div class="country-item">
-                                <img src="https://www.countryflags.com/wp-content/uploads/colombia-flag-png-large.png"
-                                    alt="Colombia" class="img-fluid">
+                                <img src="assets/img/bandera-colombia.png" alt="Colombia" class="img-fluid">
                             </div>
                             <div class="country-item">
-                                <img src="https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png"
-                                    alt="Estados Unidos" class="img-fluid">
+                                <img src="assets/img/bandera-ecuador.png" alt="Ecuador" class="img-fluid">
                             </div>
                             <div class="country-item">
-                                <img src="https://www.countryflags.com/wp-content/uploads/germany-flag-png-large.png"
-                                    alt="Alemania" class="img-fluid">
+                                <img src="assets/img/bandera-peru.png" alt="Perú" class="img-fluid">
                             </div>
                             <div class="country-item">
-                                <img src="https://cdn.countryflags.com/thumbs/brazil/flag-800.png" alt="Brasil"
-                                    class="img-fluid">
-                            </div>
-                            <div class="country-item">
-                                <img src="https://cdn.countryflags.com/thumbs/mexico/flag-800.png" alt="México"
-                                    class="img-fluid">
-                            </div>
-                            <div class="country-item">
-                                <img src="https://cdn.countryflags.com/thumbs/spain/flag-800.png" alt="España"
-                                    class="img-fluid">
+                                <img src="assets/img/bandera-costarica.png" alt="Costa Rica" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -1184,6 +1228,21 @@
                 <div class="col-md-3 col-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                     <div class="organizer-logo">
                         <img src="assets/img/organizador-4.png" alt="Organizer Logo">
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="organizer-logo">
+                        <img src="assets/img/organizador-5.png" alt="Organizer Logo">
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="organizer-logo">
+                        <img src="assets/img/organizador-6.png" alt="Organizer Logo">
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                    <div class="organizer-logo">
+                        <img src="assets/img/organizador-7.png" alt="Organizer Logo">
                     </div>
                 </div>
             </div>
@@ -1315,9 +1374,13 @@
     <!-- AOS (Animate On Scroll) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- Custom JS -->
     <script src="assets/js/index.js"></script>
     <script src="assets/js/collage.js"></script>
+    <script src="assets/js/swiper-slider.js"></script>
     <script src="assets/js/participants.js"></script>
     <script src="assets/js/slider.js"></script>
     <script src="assets/js/countries.js"></script>
