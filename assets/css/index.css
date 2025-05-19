@@ -230,6 +230,52 @@ body {
     }
 }
 
+@keyframes live-blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+}
+
+.hero-live-link span {
+    border-radius: 8px;
+}
+
+.hero-live-link .live-indicator {
+    background: #fff;
+    color: #e53935;
+    font-weight: bold;
+}
+
+.hero-live-link .live-user {
+    background: #1877f2;
+    color: #fff;
+    font-weight: 500;
+}
+
+.hero-live-link .live-icon {
+    background: #1877f2;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-live-btn {
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15)
+}
+
+.hero-live-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
 /* Video Section */
 .video-section {
     padding: 50px 0 100px 0;
