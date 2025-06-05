@@ -45,24 +45,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Countdown Timer
 function updateCountdown() {
-    const eventDate = new Date('May 26, 2025 09:00:00').getTime();
-    const now = new Date().getTime();
-    const timeLeft = eventDate - now;
+    // const eventDate = new Date('May 26, 2025 09:00:00').getTime();
+    // const now = new Date().getTime();
+    // const timeLeft = eventDate - now;
 
-    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+    // const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    // const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    // const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    // const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-    document.getElementById('countdown-days').innerText = days.toString().padStart(2, '0');
-    document.getElementById('countdown-hours').innerText = hours.toString().padStart(2, '0');
-    document.getElementById('countdown-minutes').innerText = minutes.toString().padStart(2, '0');
-    document.getElementById('countdown-seconds').innerText = seconds.toString().padStart(2, '0');
+    // document.getElementById('countdown-days').innerText = days.toString().padStart(2, '0');
+    // document.getElementById('countdown-hours').innerText = hours.toString().padStart(2, '0');
+    // document.getElementById('countdown-minutes').innerText = minutes.toString().padStart(2, '0');
+    // document.getElementById('countdown-seconds').innerText = seconds.toString().padStart(2, '0');
 }
 
 // Initial call and set interval
-updateCountdown();
-setInterval(updateCountdown, 1000);
+// updateCountdown();
+// setInterval(updateCountdown, 1000);
 
 
 // ID emailJs

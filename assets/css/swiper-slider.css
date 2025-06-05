@@ -75,3 +75,10 @@
         width: 100%;
     }
 }
+
+.memorias-swiper .swiper-button-next,
+.memorias-swiper .swiper-button-prev {
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
